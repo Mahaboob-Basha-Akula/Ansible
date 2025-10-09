@@ -1,0 +1,6 @@
+- name: play1
+  hosts: target
+  tasks:
+  - name: printing message
+    ansible.builtin.debug:
+      msg: This is frsit playbook return 
