@@ -1,5 +1,6 @@
 - name: installing nginx and restarting
   hosts: target
+  become: yes
   vars_files:
     vars.yaml   
   tasks:
