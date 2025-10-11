@@ -1,0 +1,20 @@
+- name: installing nginx and restarting
+  hosts: target
+  vars_files:
+    vars.yaml   
+  tasks:
+  - name: nginx installation
+    ansible.builtin.package:
+      name: nginx
+      state: present
+      enable: yes
+    ansible.builtin.debug:
+      msg: "Hi {{STUDENT}}, your Nginx has installed successfully"  
+
+  - name: docker installation
+    ansible.builtin.package:
+      name: docker
+      state: present
+      enable: yes
+    ansible.builtin.debug:
+      msg: "Hi {{STUDENT}}, your {{SOFTWARE}} has installed successfully"
