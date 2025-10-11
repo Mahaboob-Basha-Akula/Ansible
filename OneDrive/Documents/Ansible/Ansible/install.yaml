@@ -7,7 +7,7 @@
     ansible.builtin.package:
       name: nginx
       state: present
-      enable: yes
+      # enable: yes
   # - name: Printing message for package    
   #   ansible.builtin.debug:
   #     msg: "Hi {{STUDENT}}, your Nginx has installed successfully"  
@@ -16,7 +16,7 @@
     ansible.builtin.package:
       name: docker
       state: present
-      enable: yes
+      # enable: yes
 
   # - name: Printing message for package    
   #   ansible.builtin.debug:
