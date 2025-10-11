@@ -1,0 +1,9 @@
+- name: global level vaiables
+  hosts: local
+  connection: local
+  vars_files:
+  - vars.yaml
+  tasks:
+  - name: using vaiables from different files
+    ansible.builtin.debug:
+      msg: "Myself {{STUDENT}} learning COURSE in {{INSTITUTE}} for {{DURATION}}. All the best {{STUDENT}}"
