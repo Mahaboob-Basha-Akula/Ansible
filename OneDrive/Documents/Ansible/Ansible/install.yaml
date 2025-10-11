@@ -8,6 +8,7 @@
       name: nginx
       state: present
       enable: yes
+  - name: Printing message for package    
     ansible.builtin.debug:
       msg: "Hi {{STUDENT}}, your Nginx has installed successfully"  
 
@@ -16,5 +17,7 @@
       name: docker
       state: present
       enable: yes
+
+  - name: Printing message for package    
     ansible.builtin.debug:
       msg: "Hi {{STUDENT}}, your {{SOFTWARE}} has installed successfully"
